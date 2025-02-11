@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>FAQ</title>
+    <style>
+        .faq { cursor: pointer; background: lightgray; padding: 10px; }
+        .answer { display: none; padding: 10px; }
+    </style>
+</head>
+<body>
+    <div class="faq" onclick="toggleFaq()">What is HTML?</div>
+    <div class="answer">HTML stands for HyperText Markup Language.</div>
+    <script>
+        function toggleFaq() {
+            let ans = document.querySelector(".answer");
+            ans.style.display = ans.style.display === "none" ? "block" : "none";
+        }
+    </script>
+</body>
+</html>
